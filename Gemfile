@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.2'
 gem 'activeadmin', '~> 1.0.0.pre5'
 gem 'inherited_resources', '~> 1.7'
+gem 'active_skin'
 
 group :development, :test do
   gem 'byebug', platform: :mri

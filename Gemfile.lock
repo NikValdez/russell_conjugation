@@ -24,6 +24,7 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_skin (0.0.12)
     activeadmin (1.0.0.pre5)
       arbre (~> 1.0, >= 1.0.2)
       bourbon
@@ -218,6 +219,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_skin
   activeadmin (~> 1.0.0.pre5)
   byebug
   coffee-rails (~> 4.2)
