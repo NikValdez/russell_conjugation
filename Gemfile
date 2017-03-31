@@ -18,6 +18,7 @@ gem 'devise', '~> 4.2'
 gem 'activeadmin', '~> 1.0.0.pre5'
 gem 'inherited_resources', '~> 1.7'
 gem 'active_skin'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 group :development, :test do
   gem 'byebug', platform: :mri
