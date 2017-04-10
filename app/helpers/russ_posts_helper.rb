@@ -1,0 +1,2 @@
+module RussPostsHelper
+end

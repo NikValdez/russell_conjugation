@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Russ Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @russ_posts.each do |russ_post| %>
+      <tr>
+        <td><%= russ_post.title %></td>
+        <td><%= russ_post.body %></td>
+        <td><%= link_to 'Show', russ_post %></td>
+        <td><%= link_to 'Edit', edit_russ_post_path(russ_post) %></td>
+        <td><%= link_to 'Destroy', russ_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Russ Post', new_russ_post_path %>

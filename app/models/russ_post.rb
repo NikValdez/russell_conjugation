@@ -1,0 +1,2 @@
+class RussPost < ApplicationRecord
+end

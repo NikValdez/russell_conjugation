@@ -1,0 +1,22 @@
+<%= form_for(russ_post) do |f| %>
+  <% if russ_post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(russ_post.errors.count, "error") %> prohibited this russ_post from being saved:</h2>
+
+      <ul>
+      <% russ_post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.trix_editor :body %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

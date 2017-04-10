@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @russ_post.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @russ_post.body %>
+</p>
+
+<%= link_to 'Edit', edit_russ_post_path(@russ_post) %> |
+<%= link_to 'Back', russ_posts_path %>

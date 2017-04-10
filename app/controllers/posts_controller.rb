@@ -8,6 +8,7 @@ class PostsController < ApplicationController
 		@posts = Post.order("created_at desc").limit(4).offset(1)
 	end
 
+
 	private
 	def post_params
 		params.require(:post).permit(:title, :body)
