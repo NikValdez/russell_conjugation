@@ -1,9 +1,9 @@
 class RussPostsController < InheritedResources::Base
 
-  private
+  # private
 
     def russ_post_params
-      params.require(:russ_post).permit(:title, :body)
+       params.require(:russ_post).permit(:title, :body)
     end
 end
 
