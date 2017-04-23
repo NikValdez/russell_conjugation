@@ -1,1 +1,1 @@
-require "./lib/russell_conj.rb"
+require "./lib/russell_conj"
