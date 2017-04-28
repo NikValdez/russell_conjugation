@@ -1,37 +1,62 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
-<p>
-  <!-- <strong>Body:</strong> -->
-  <% def positive_words %>
-    <% @p_words = ["good", "best", "great", "daring", "hopeful", "upbeat", "assured", "clear", "balanced", "fine", "okay", "grateful", "carefree", "adequate", "fulfilled", "genuine", "authentic", "forgiving", "sincere", "uplifted", "unburdened", "confident", "self-sufficient", "reliable", "sure", "unique", "dynamic", "tenacious", "cooperative", "productive", "exuberant", "in the zone", "responsive", "conscientious", "approving", "honored", "privileged", "adaptable", "Empowered", "Focused", "Capable", "Magical", "Instantly", "Missing Out",  "Magnificent", "Miracle", "Most Important", "Profitable", "Proven", "Quick", "Remarkable", "Results", "Revolutionary", "Safe", "Save", "Sensational", "Startling", "Strongly ", "Strongly ", "Superb", "Superior", "Tremendous", "Truly", "Trustworthy", "Urge", "Worthwhile", "Limited", "bargain", "Discount", "Explode", "Extra", "Fortune", "Freebie", "Jackpot", "Reduced", "Instant Savings", "Skyrocket", "Accurate", "instantly", "Advantage", "Always", "A cut above", "Bargain", "Certain", "Certainly", "Confident", "Convenient", "Definitely", "Delighted", "Easy", "Ecstatic", "Effective", "Emphasize", "Extremely", "Freedom", "Guaranteed", "Highly effective/ likely", "Introducing", "First ever", "Investment", "conscientious", "approving", "honored", "privileged", "adaptable", "relaxed", "Astonishing", "Astounded", "assured", "fulfilled", "genuine", "authentic", "self-sufficient", "reliable", "sure", "secure", "stable", "honest", "truthful", "supportive", "excellent", "responsible", "solid", "trusting", "supported", "Absolutely", "Bargain", "clarity", "transparency", "humility", "blissful", "joyous", "delighted", "overjoyed", "gleeful", "thankful", "festive", "ecstatic", "satisfied", "cheerful", "sunny", "elated", "jubilant", "jovial", "fun-loving", "lighthearted", "glorious", "innocent", "child-like", "gratified", "euphoric", "on top of the", "world", "playful", "courageous", "energetic", "liberated", "optimistic", "frisky", "animated", "spirited", "thrilled", "wonderful", "funny", "intelligent", "exhilarated", "spunky", "youthful", "vigorous", "tickled", "creative", "constructive", "helpful", "resourceful", "at ease", "comfortable", "pleased", "encouraged", "surprised", "content", "serene", "bright", "blessed", "Vibrant", "Bountiful", "Glowing", " Emotional State: Inspired (as part of content that is meant to inspire and make them feel like they are capable and in charge)", "motivated", "eager", "keen", "earnest", "inspired", "enthusiastic", "bold", "brave"].map(&:downcase) %>       
-    <% @new_text = @russ_post.body.downcase.split(" ") %>
-    <% arr = [] %>
-    <% @new_text.each do |word| %>
-    	<% if @p_words.include?(word) %>
-    		<% arr.push(word) %>
-    	<% end %>
-    <% end %>
-    <% arr.length + 1 %>
-  <% end %>
-  <%= positive_words %>
-
-  <% def negative_words %>
-    <% @n_words = ["bad", "evil", "sad" "Secret", "Confidential", "Controversial", "Underground", "What no one tells you", "Have you heard", "Cover-up", "Forbidden", "Banned", "Behind the Scenes", "Secret agenda", "Secret plot", "Insider", "Off-the record", "Blacklisted", "Censored", "Concealed", "Confessions", "Unbelievable", "Covert", "No one talks about", "Hidden", "underground", "doubtful", "uncertain", "indecisive", "perplexed", "embarrassed", "hesitant", "disillusioned", "distrustful", "misgiving", "unsure", "tense", "stressed", "uncomfortable", "dishonest", "disdainful", "manipulative", "judgmental", "argumentative", "authoritative", "condescending", "distracted", "disoriented", "off-kilter", "frenzied", "blushing", "awkward", "incapable", "paralyzed", "fatigued", "inferior", "vulnerable", "distressed", "pathetic", "distraught", "doomed", "overwhelmed", "incompetent", "incapacitated", "trapped", "squirming", "jittery", "woozy", "twitching", "compulsive", "uncaring", "uninterested", "unresponsive", "terrified", "suspicious", "anxious", "alarmed", "panicked", "threatened", "cowardly", "insecure", "Deceived ", "Ordeal", "Outrageousness", "Provoke", "Repulsive", "Scandal", "Severe", "Shameful", "Shocking", "Terrible", "Tragic", "Unreliable", "Unstable", "Wicked", "Aggravate", "Agony", "Appalled", "Atrocious", "Corrupting", "Damaging", "Deplorable", "Disadvantages", "Disastrous", "Disgusted", "Dreadful", "Eliminate", "Harmful", "Harsh", "Inconsiderate", "enraged", "offensive", "aggressive", "frustrated", "controlling", "resentful", "malicious", "infuriated", "critical", "violent", "vindictive", "sadistic", "spiteful", "furious", "agitated", "antagonistic", "repulsed", "quarrelsome", "venomous", "rebellious", "exasperated", "impatient", "contrary", "condemning", "seething", "scornful", "sarcastic", "poisonous", "jealous", "ticked off", "revengeful", "retaliating", "reprimanding", "powerless", "despicable", "self-hating", "desperate", "alienated", "pessimistic", "dejected", "vilified", "unjustified", "violated"]
-.map(&:downcase) %>
-    <% neg_arr = [] %>
-    <% @new_text.each do |word| %>
-      <% if @n_words.include?(word) %>
-        <% neg_arr.push(word) %>
+<!-- <p> -->
+<div class="container">
+  <div class="eval">
+    <div class=".col-xs-6 .col-sm-3 ">
+      <% def positive_words %>
+        <% @p_words = ["good", "best", "great", "daring", "hopeful", "upbeat", "assured", "clear", "balanced", "fine", "okay", "grateful", "carefree", "adequate", "fulfilled", "genuine", "authentic", "forgiving", "sincere", "uplifted", "unburdened", "confident", "self-sufficient", "reliable", "sure", "unique", "dynamic", "tenacious", "cooperative", "productive", "exuberant", "in the zone", "responsive", "conscientious", "approving", "honored", "privileged", "adaptable", "Empowered", "Focused", "Capable", "Magical", "Instantly", "Missing Out",  "Magnificent", "Miracle", "Most Important", "Profitable", "Proven", "Quick", "Remarkable", "Results", "Revolutionary", "Safe", "Save", "Sensational", "Startling", "Strongly ", "Strongly ", "Superb", "Superior", "Tremendous", "Truly", "Trustworthy", "Urge", "Worthwhile", "Limited", "bargain", "Discount", "Explode", "Extra", "Fortune", "Freebie", "Jackpot", "Reduced", "Instant Savings", "Skyrocket", "Accurate", "instantly", "Advantage", "Always", "A cut above", "Bargain", "Certain", "Certainly", "Confident", "Convenient", "Definitely", "Delighted", "Easy", "Ecstatic", "Effective", "Emphasize", "Extremely", "Freedom", "Guaranteed", "Highly effective/ likely", "Introducing", "First ever", "Investment", "conscientious", "approving", "honored", "privileged", "adaptable", "relaxed", "Astonishing", "Astounded", "assured", "fulfilled", "genuine", "authentic", "self-sufficient", "reliable", "sure", "secure", "stable", "honest", "truthful", "supportive", "excellent", "responsible", "solid", "trusting", "supported", "Absolutely", "Bargain", "clarity", "transparency", "humility", "blissful", "joyous", "delighted", "overjoyed", "gleeful", "thankful", "festive", "ecstatic", "satisfied", "cheerful", "sunny", "elated", "jubilant", "jovial", "fun-loving", "lighthearted", "glorious", "innocent", "child-like", "gratified", "euphoric", "on top of the", "world", "playful", "courageous", "energetic", "liberated", "optimistic", "frisky", "animated", "spirited", "thrilled", "wonderful", "funny", "intelligent", "exhilarated", "spunky", "youthful", "vigorous", "tickled", "creative", "constructive", "helpful", "resourceful", "at ease", "comfortable", "pleased", "encouraged", "surprised", "content", "serene", "bright", "blessed", "Vibrant", "Bountiful", "Glowing", " Emotional State: Inspired (as part of content that is meant to inspire and make them feel like they are capable and in charge)", "motivated", "eager", "keen", "earnest", "inspired", "enthusiastic", "bold", "brave"].map(&:downcase) %>       
+        <% @new_text = @russ_post.body.downcase.split(" ") %>
+        <% arr = [] %>
+        <% @new_text.each do |word| %>
+        	<% if @p_words.include?(word) %>
+        		<% arr.push(word) %>
+        	<% end %>
+        <% end %>
+        <% arr.length + 1 %>
       <% end %>
-    <% end %>
-    <% neg_arr.length + 1 %>
-  <% end %>
-  <%= negative_words %> 
+      <% positive_words %>
 
- <% if positive_words > negative_words %>
-  <%= "This text is positive" %>
-  <% elsif negative_words > positive_words %>
-  <%= "This text is negative" %>
-  <% else %>
-  <%= "This text is neutral" %>
-  <% end %>
+      <% def negative_words %>
+        <% @n_words = ["bad", "evil", "sad" "Secret", "Confidential", "Controversial", "Underground", "What no one tells you", "Have you heard", "Cover-up", "Forbidden", "Banned", "Behind the Scenes", "Secret agenda", "Secret plot", "Insider", "Off-the record", "Blacklisted", "Censored", "Concealed", "Confessions", "Unbelievable", "Covert", "No one talks about", "Hidden", "underground", "doubtful", "uncertain", "indecisive", "perplexed", "embarrassed", "hesitant", "disillusioned", "distrustful", "misgiving", "unsure", "tense", "stressed", "uncomfortable", "dishonest", "disdainful", "manipulative", "judgmental", "argumentative", "authoritative", "condescending", "distracted", "disoriented", "off-kilter", "frenzied", "blushing", "awkward", "incapable", "paralyzed", "fatigued", "inferior", "vulnerable", "distressed", "pathetic", "distraught", "doomed", "overwhelmed", "incompetent", "incapacitated", "trapped", "squirming", "jittery", "woozy", "twitching", "compulsive", "uncaring", "uninterested", "unresponsive", "terrified", "suspicious", "anxious", "alarmed", "panicked", "threatened", "cowardly", "insecure", "Deceived ", "Ordeal", "Outrageousness", "Provoke", "Repulsive", "Scandal", "Severe", "Shameful", "Shocking", "Terrible", "Tragic", "Unreliable", "Unstable", "Wicked", "Aggravate", "Agony", "Appalled", "Atrocious", "Corrupting", "Damaging", "Deplorable", "Disadvantages", "Disastrous", "Disgusted", "Dreadful", "Eliminate", "Harmful", "Harsh", "Inconsiderate", "enraged", "offensive", "aggressive", "frustrated", "controlling", "resentful", "malicious", "infuriated", "critical", "violent", "vindictive", "sadistic", "spiteful", "furious", "agitated", "antagonistic", "repulsed", "quarrelsome", "venomous", "rebellious", "exasperated", "impatient", "contrary", "condemning", "seething", "scornful", "sarcastic", "poisonous", "jealous", "ticked off", "revengeful", "retaliating", "reprimanding", "powerless", "despicable", "self-hating", "desperate", "alienated", "pessimistic", "dejected", "vilified", "unjustified", "violated"]
+    .map(&:downcase) %>
+        <% neg_arr = [] %>
+        <% @new_text.each do |word| %>
+          <% if @n_words.include?(word) %>
+            <% neg_arr.push(word) %>
+          <% end %>
+        <% end %>
+        <% neg_arr.length + 1 %>
+      <% end %>
+      <% negative_words %> 
+
+     <% if positive_words > negative_words %>
+      <%= "According to Bertrand this text is emotionally positive" %>
+      <% elsif negative_words > positive_words %>
+      <%= "According to Bertrand this text is emotionally negative" %>
+      <% else %>
+      <%= "According to Bertrand this text is emotionally neutral" %>
+      <% end %>
+
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <div class="image-eval">
+    <div class=".col-xs-6 .col-sm-3 ">
+      <% if positive_words > negative_words %>
+      <%= image_tag "BertrandHappy.png", class: "eval-image" %>
+      <% elsif negative_words > positive_words %>
+      <%= image_tag "BertrandSad.png", class: "eval-image" %>
+      <% else %>
+      <%= image_tag "BertrandNeutral.png", class: "eval-image" %>
+
+      <% end %>
+     </div>
+  </div>
+</div>
+
+<div>
+<%= link_to 'New Post', '/russ_posts/new' %> |
+<%= link_to 'Home', posts_path %>
+</div>

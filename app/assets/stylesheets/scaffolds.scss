@@ -94,12 +94,14 @@ label {
 }
 
 trix-editor {
-  height:600px;
+  height:500px;
   width:800px;
+  overflow: auto;
 }
 
 trix-toolbar {
-  display: none;
+  text-align: center; 
+  /*display: none;*/
 }
 
 
@@ -123,53 +125,5 @@ a {
 }
 
 
-input[type="button"] { 
-  font-size: 40px;
-  color: #fff; 
-  background-color: #2C3E50;
-  border:5px solid; 
-  border-color: #2C3E50;
-  position: relative;
-  top: 60px; 
-  border-radius: 8px;
-}
-
-input[type="submit"] {
-  font-size: 30px;
-  color: #2C3E50; 
-  background-color: inherit;
-  border:5px solid; 
-  border-color: #2C3E50;
-  position: relative;
-  top: 20px; 
-  border-radius: 8px; 
-}
-
-input[type="submit"]:hover {
-  background-color: #2C3E50;
-  color: #fff;
-}
-
-
-.img-responsive {
-  position: relative;
-  top: -150px; 
-}
-
-header .intro-text .name {
-  position: relative;
-  top: -145px; 
-}
-
-header .intro-text .skills {
-  position: relative;
-  top: -145px; 
-}
-
-hr.star-light {
-  display: none;
-  position: relative;
-  top: -145px; 
-}
 
 

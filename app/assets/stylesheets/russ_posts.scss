@@ -1,5 +1,62 @@
-// Place all the styles related to the RussPosts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+input[type="button"] { 
+  font-size: 40px;
+  color: #fff; 
+  background-color: #2C3E50;
+  border:5px solid; 
+  border-color: #2C3E50;
+  position: relative;
+  top: 60px; 
+  border-radius: 8px;
+}
+
+input[type="submit"] {
+  font-size: 30px;
+  color: #2C3E50; 
+  background-color: inherit;
+  border:5px solid; 
+  border-color: #2C3E50;
+  position: relative;
+  top: 20px; 
+  border-radius: 8px; 
+}
+
+input[type="submit"]:hover {
+  background-color: #2C3E50;
+  color: #fff;
+}
 
 
+.img-responsive {
+  position: relative;
+  top: -150px; 
+}
+
+header .intro-text .name {
+  position: relative;
+  top: -145px; 
+}
+
+header .intro-text .skills {
+  position: relative;
+  top: -145px; 
+}
+
+hr.star-light {
+  display: none;
+  position: relative;
+  top: -145px; 
+}
+
+.eval {
+  font-size: 50px;
+  color: #2C3E50; 
+  text-align: center; 
+}
+
+.eval-image {
+	 display: block;
+   margin: auto;
+   padding: 30px;
+   padding-bottom: 100px;
+}
