@@ -20,6 +20,7 @@ gem 'inherited_resources', '~> 1.7'
 gem 'active_skin'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'trix'
+gem 'mail_form'
 
 group :development, :test do
   gem 'byebug', platform: :mri
