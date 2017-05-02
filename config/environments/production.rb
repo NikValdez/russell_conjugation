@@ -76,7 +76,7 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   config.initialize_on_precompile = true
-  heroku labs:enable user-env-compile -a myapp
+  
 
 
 
