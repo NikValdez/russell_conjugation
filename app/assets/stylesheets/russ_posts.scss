@@ -9,8 +9,8 @@ body {
 
 p, ol, ul, td {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 30px;
   margin: 33px;
 }
 
@@ -210,10 +210,47 @@ text-decoration: none;
 
   display:block;
   padding: 25px;
-  width: 55%;
-  margin-left: 460px;
+  text-align: center;
   }
 
 .row {
   padding-bottom: 30px;
 }
+
+.sub-text {
+  text-align: center;
+  color: #777;
+}
+
+
+.text-center {
+  position: relative;
+  top: -60px;
+}
+.paragraph-content {
+  position: relative;
+  top: -90px;
+}
+
+.img-post {
+  display: block;
+  margin: 0 auto;
+  width: 200%;
+  border-radius: 15px 50px;
+  position: relative;
+  bottom: 70px;
+}
+
+.col-lg-12 text-center, h2 {
+  padding-bottom: 20px;
+}
+
+.success {
+  position: relative;
+  top: -100px;
+}
+
+.concept-title {
+  color: #18BC9C;
+}
+
