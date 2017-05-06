@@ -230,15 +230,18 @@ text-decoration: none;
 .paragraph-content {
   position: relative;
   top: -90px;
+  text-align: center;
+  display: block;
 }
 
 .img-post {
   display: block;
   margin: 0 auto;
-  width: 200%;
+  width: 190%;
   border-radius: 15px 50px;
   position: relative;
   bottom: 70px;
+
 }
 
 .col-lg-12 text-center, h2 {
