@@ -1,24 +1,9 @@
-# README
+# RussellConjugation
+This is the first iteration of an app meant to address the issue of emotionally manipulative media. Know as the Russell Conjugation or Emotive Conjugation the basic concept states that depending on how we phrase things, they will elicit a very different emotional response, irrespective of content. This app is a very basic and flawed first crack at the problem but I believe it has potential and can be improved upon a great deal.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Below is a description of what this app intends to address: 
+From Edge.org(Eric Weinstein) "In order to understand the concept properly you have to appreciate that most words and phrases are actually defined not by a single dictionary description, but rather two distinct attributes: I) The factual content of the word or phrase. II) The emotional content of the construction. Where words can be considered “synonyms” if they carry the same factual content (I) regardless of the emotional content (II). This however leads to the peculiar effect that the synonyms for a positive word like “whistle-blower” cannot be used in its place as they are almost universally negative (with “snitch,” “fink,” “tattletale” being representative examples). This is our first clue that something is wrong, or at least incomplete with our concept of synonym requiring an upgrade to distinguish words that may be content synonyms but emotional antonyms. The basic principle of Russell Conjugation is that the human mind is constantly looking ahead well beyond what is true or false to ask “What is the social consequence of accepting the facts as they are?” While this line of thinking is obviously self-serving, we are descended from social creatures who could not safely form opinions around pure facts so much as around how those facts are presented to us by those we ape, trust or fear. Thus, as listeners and readers our minds generally mirror the emotional state of the source, while in our roles as authoritative narrators presenting the facts, we maintain an arsenal of language to subliminally instruct our listeners and readers on how we expect them to color their perceptions. Russell discussed this by putting three such presentations of a common underlying fact in the form in which a verb is typically conjugated: I am firm. [Positive empathy] You are obstinate. [Neutral to mildly negative empathy] He/She/It is pigheaded. [Very negative empathy] In all three cases, Russell was describing people who did not readily change their minds. Yet by putting these descriptions so close together and without further factual information to separate the individual cases, we were forced to confront the fact that most of us feel positively towards the steadfast narrator and negatively towards the pigheaded fool, all without any basis in fact."
 
-Things you may want to cover:
+# Contributing to RussellConjugation 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Trix is open-source software, freely distributable under the terms of an MIT-style license. Do what you like with it. 
