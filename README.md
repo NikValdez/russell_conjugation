@@ -6,4 +6,4 @@ From Edge.org(Eric Weinstein) "In order to understand the concept properly you h
 
 # Contributing to RussellConjugation 
 
-Trix is open-source software, freely distributable under the terms of an MIT-style license. Do what you like with it. 
+RussellConjugation is open-source software, freely distributable under the terms of an MIT-style license. Do what you like with it. 
